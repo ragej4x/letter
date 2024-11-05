@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="customfont">
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong> dear (Stephanie) </strong>
+                        <p class="customfont">
+                            I've been wanting to tell you this for so long, but I couldn't find the right words. As I sit down to write this letter, my heart beats faster, and my hands tremble with excitement and nervousness.
+
+From the moment I met you, I knew there was something special about you. Your smile captivated me, and your kindness touched my heart. Every moment we've shared since then has only reaffirmed my feelings.
+
+I want you to know that I've fallen deeply in love with you. Your presence in my life has brought me immense joy, and I can't imagine a future without you by my side.
+
+My intentions are pure and true. I want to spend the rest of my life making you happy, supporting your dreams, and creating unforgettable memories together. I promise to be your rock, your partner, and your best friend.
+
+I hope you feel the same way, and I'm willing to wait for as long as it takes for you to realize your feelings. If you're willing, I'd love to explore this journey with you.
+                                        from (Laurenz)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <audio id="audio" src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
+    <script>
+        function play(){
+            var cSound = document.getElementById('audio')
+        }
+
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+        
+
+
+    </script>
+</body>
+</html>
