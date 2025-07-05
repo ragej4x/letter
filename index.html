@@ -15,38 +15,27 @@
             <div class="envelope">
                 <div class="letter">
                     <div class="text">
-                        <strong> dear (Sarah) </strong>
+                        <strong>Dear Sarah,</strong>
                         <p class="customfont">
-                            I've been wanting to tell you this for so long, but I couldn't find the right words. As I sit down to write this letter, my heart beats faster, and my hands tremble with excitement and nervousness.
+                            I've been meaning to tell you this for a long time, but I struggled to find the right moment. From the very beginning, something about you stood out—your smile, your kindness, and the way you made me feel truly seen. Over time, those feelings only grew stronger, and now I can say with all my heart that I’ve fallen deeply in love with you.
 
-From the moment I met you, I knew there was something special about you. Your smile captivated me, and your kindness touched my heart. Every moment we've shared since then has only reaffirmed my feelings.
-
-I want you to know that I've fallen deeply in love with you. Your presence in my life has brought me immense joy, and I can't imagine a future without you by my side.
-
-My intentions are pure and true. I want to spend the rest of my life making you happy, supporting your dreams, and creating unforgettable memories together. I promise to be your rock, your partner, and your best friend.
-
-I hope you feel the same way, and I'm willing to wait for as long as it takes for you to realize your feelings. If you're willing, I'd love to explore this journey with you.
-                                        from (Laurenz)
+You’ve brought so much happiness into my life, and I can’t imagine my future without you in it. My intentions are genuine—I want to be there for you, support your dreams, and create a beautiful life together. If you feel the same, I’d love to take this journey with you. And even if you're not sure yet, I’m willing to wait.
                         </p>
+                        <p style="text-align: right; margin-top: 10px;"><strong>From Laurenz</strong></p>
                     </div>
                 </div>
             </div>
             <div class="heart"></div>
         </div>
     </div>
-    <audio id="audio" src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
+    <audio id="audio" src="paper-rustle-81855.mp3"></audio>
+    <script src="script.js"></script>
     <script>
-        function play(){
-            var cSound = document.getElementById('audio')
-        }
-
         const envelope = document.querySelector('.envelope-wrapper');
         envelope.addEventListener('click', () => {
             envelope.classList.toggle('flap');
+            play();
         });
-        
-
-
     </script>
 </body>
 </html>
